@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="vh-100 overflow-hidden">
+      <div class="container">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg m-auto">
+          <a href="./index.html" class="navbar-brand"
+            ><h1 class="text-uppercase">coco</h1></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item text-center">
+                <a
+                  class="nav-link active text-uppercase"
+                  aria-current="page"
+                  href="./index.html"
+                  id="login"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link text-uppercase" href="#" id="register"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Main Row -->
+        <div class="row mt-4">
+          <!-- Image Section -->
+          <div class="col-md-6 d-none d-md-flex">
+            <figure>
+              <img
+                src="./images/img-login.svg"
+                alt="image-content"
+                class="w-100 d-block"
+              />
+            </figure>
+          </div>
+          <!-- Form Section -->
+          <div class="col-md-6 px-5 z-3">
+            <!-- SignUp Section -->
+            <section id="signupSection">
+              <h2 class="mb-3">Sign Up</h2>
+              <p class="exist-message text-center text-danger d-none">this email already exist!!</p>
+              <div class="mb-3">
+                <input
+                  id="signUpUserName"
+                  type="text"
+                  class="form-control py-2"
+                  placeholder="User Name"
+                />
+                <div class="error text-danger ps-2"></div>
+              </div>
+              <div class="mb-3">
+                <input
+                  id="signUpEmail"
+                  type="email"
+                  class="form-control py-2"
+                  placeholder="Email"
+                />
+                <div class="error text-danger ps-2"></div>
+              </div>
+              <div class="mb-3">
+                <input
+                  id="signUpPassword"
+                  type="password"
+                  class="form-control py-2"
+                  placeholder="Password"
+                />
+                <div class="error text-danger ps-2"></div>
+              </div>
+              <div class="mb-3">
+                <input
+                  id="signUpRepassword"
+                  type="password"
+                  class="form-control py-2"
+                  placeholder="Confirm Password"
+                />
+                <div class="error text-danger ps-2"></div>
+              </div>
+              <div class="signUp">
+                <button
+                  id="signUpBtn"
+                  type="button"
+                  class="border border-0 w-100 py-2 fs-5 rounded-3 text-white"
+                >
+                  Sign Up
+                </button>
+              </div>
+              <div class="mt-2 text-center">
+                <span>Already have an Account! </span
+                >
+                <a href="./index.html" class="alreadyBtn border border-0 fw-bold bg-transparent text-decoration-none">LogIn</a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/register.js"></script>
+  </body>
+</html>
